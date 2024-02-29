@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+.slider {
+    background-color: red;
+    width: 400px;
+    text-align: center;
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
