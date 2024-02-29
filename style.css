@@ -1,16 +1,47 @@
 * {
-    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-align: center;
 }
 
 .slider {
-    background-color: red;
-    width: 400px;
-    text-align: center;
-    overflow: hidden;
+    width: 70%;
+    margin: auto;
+}
+
+.slides-link {
+    display: flex;
+    justify-content: center;
+}
+
+.slides-link>a {
+    text-decoration: none;
+    color: black;
+    background-color: brown;
+    border-radius: 50%;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 1.5rem 0.4rem;
+    box-shadow: 5px 5px 8px 1px rgba(4, 4, 63, 0.2);
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slides>div {
+    scroll-snap-align: start;
 }
 
 img {
-    position: absolute;
-    top: 0;
-    left: 0;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    max-width: 500px;
+    max-height: 350px;
 }
